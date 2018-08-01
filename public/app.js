@@ -22,6 +22,7 @@ const populateList = function(beers){
   const img = document.createElement('img');
   beers.forEach(function(beer, index) {
     let li = document.createElement('li')
+    li.addClass = 'beer-li';
     let url = beer.image_url;
     img.src = url;
     console.log(img);
