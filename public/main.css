@@ -3,14 +3,24 @@ main{
   margin: 0 auto;
 }
 
+body{
+  background-color: #0099ff;
+}
+
 input{
-  padding: 10px;
-  border-radius: 5px;
-  width: 400px;
-  font-size: 22px;
-  margin: 10px;
+  font-size: 1em;
 }
 
 .beer{
   padding: 5px;
+}
+
+.heading{
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+#beers-list{
+  font-family: 'Quicksand', sans-serif;
 }
