@@ -14,15 +14,18 @@ const requestComplete = function(){
   if(this.status !== 200) return;
   const jsonString = this.responseText;
   beers = JSON.parse(jsonString);
-  populateSelect(beers);
+  populateList(beers);
 }
 
-const populateSelect = function(beers){
+const populateList = function(beers){
   const ul = document.getElementById('beers-list');
   const img = document.createElement('img');
   beers.forEach(function(beer, index) {
     let li = document.createElement('li')
-    li.innerText = beer.name
+    let url = beer.image_url;
+    img.src = url;
+    console.log(img);
+    li.innerText = beer.name;
     li.value = index
     ul.appendChild(li)
   });
